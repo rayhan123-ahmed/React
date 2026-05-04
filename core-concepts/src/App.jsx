@@ -2,6 +2,7 @@
 import './App.css'
 import {Welcome} from './welcome.jsx';
 import {Button} from './button.jsx';
+import { Hello,HelloWithoutJSX } from './Hello.jsx';
 
 
 
@@ -9,7 +10,8 @@ import {Button} from './button.jsx';
 export const App = () => {
   return (
     <div>
-      <h1>React course</h1>
+      <Hello />
+      <HelloWithoutJSX />
       <Welcome />
       <Button />
     </div>
