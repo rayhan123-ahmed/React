@@ -18,12 +18,14 @@ export const App = () => {
         isOnline={true}
         hideOffline={false}
         isPremimum={true}
+        role="admin"
       />
       <UserDetails
         name="sifat"
-        isOnline={false}
+        isOnline={true}
         hideOffline={true}
         isPremimum={true}
+        role="vip"
       />
 
       <CardWrapper title="user profile">
