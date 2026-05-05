@@ -1,4 +1,3 @@
-
 import './App.css'
 import {Welcome} from './welcome.jsx';
 import {Button} from './button.jsx';
@@ -7,6 +6,7 @@ import { UserProfile } from './userProfile.jsx';
 import { ContactForm } from './contactForm.jsx';
 import { CandidatesProfile } from './candidatesProfile.jsx';
 import { Product } from './product.jsx';
+import { Greeting } from './greeting.jsx';
 
 
 
@@ -14,6 +14,11 @@ import { Product } from './product.jsx';
 export const App = () => {
   return (
     <div>
+       <Greeting name='rifat' massage='hey' />
+       <Greeting name='sifat' />
+       <Greeting  massage='hey' />
+       <Greeting  />
+
       <Welcome name="rayhan" alis="superman" />
       <Welcome name="ahmed" alis="batman" />
       <Welcome name="rifat" alis="ironman" />
