@@ -8,10 +8,14 @@ import { CandidatesProfile } from "./candidatesProfile.jsx";
 import { Product } from "./product.jsx";
 import { Greeting } from "./greeting.jsx";
 import { CardWrapper } from "./CardWrapper.jsx";
+import { UserDetails } from "./UserDetails.jsx";
 
 export const App = () => {
   return (
     <div>
+    <UserDetails name= 'rayhan' isOnline={true} />
+    <UserDetails name= 'sifat' isOnline={false} hideOffline={true} />
+
       <CardWrapper title="user profile">
         <div>
           <p>rayhan</p>
