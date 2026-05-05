@@ -1,23 +1,29 @@
-import './App.css'
-import {Welcome} from './welcome.jsx';
-import {Button} from './button.jsx';
-import { Hello,HelloWithoutJSX } from './Hello.jsx';
-import { UserProfile } from './userProfile.jsx';
-import { ContactForm } from './contactForm.jsx';
-import { CandidatesProfile } from './candidatesProfile.jsx';
-import { Product } from './product.jsx';
-import { Greeting } from './greeting.jsx';
-
-
-
+import "./App.css";
+import { Welcome } from "./welcome.jsx";
+import { Button } from "./button.jsx";
+import { Hello, HelloWithoutJSX } from "./Hello.jsx";
+import { UserProfile } from "./userProfile.jsx";
+import { ContactForm } from "./contactForm.jsx";
+import { CandidatesProfile } from "./candidatesProfile.jsx";
+import { Product } from "./product.jsx";
+import { Greeting } from "./greeting.jsx";
+import { CardWrapper } from "./CardWrapper.jsx";
 
 export const App = () => {
   return (
     <div>
-       <Greeting name='rifat' massage='hey' />
-       <Greeting name='sifat' />
-       <Greeting  massage='hey' />
-       <Greeting  />
+      <CardWrapper title="user profile">
+        <div>
+          <p>rayhan</p>
+          <p>rmd09181@gmail.com</p>
+          <button>Profile Button</button>
+        </div>
+      </CardWrapper>
+
+      <Greeting name="rifat" massage="hey" />
+      <Greeting name="sifat" />
+      <Greeting massage="hey" />
+      <Greeting />
 
       <Welcome name="rayhan" alis="superman" />
       <Welcome name="ahmed" alis="batman" />
@@ -36,6 +42,6 @@ export const App = () => {
       <ContactForm />
     </div>
   );
-}
+};
 
-export default App
+export default App;
