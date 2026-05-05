@@ -13,8 +13,8 @@ import { UserDetails } from "./UserDetails.jsx";
 export const App = () => {
   return (
     <div>
-    <UserDetails name= 'rayhan' isOnline={true} />
-    <UserDetails name= 'sifat' isOnline={false} hideOffline={true} />
+    <UserDetails name= 'rayhan' isOnline={false} />
+    <UserDetails name= 'sifat' isOnline={true} hideOffline={true} />
 
       <CardWrapper title="user profile">
         <div>
