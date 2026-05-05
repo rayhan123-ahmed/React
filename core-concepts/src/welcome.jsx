@@ -1,4 +1,4 @@
- export const  Welcome = () => {
-  return <h2>welcome mobin</h2>;
+ export const  Welcome = ({name,alis}) => {
+  return <h2>welcome {name} a.k.a {alis}</h2>;
 }
 
