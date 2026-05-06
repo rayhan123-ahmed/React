@@ -9,10 +9,13 @@ import { Product } from "./product.jsx";
 import { Greeting } from "./greeting.jsx";
 import { CardWrapper } from "./CardWrapper.jsx";
 import { UserDetails } from "./UserDetails.jsx";
+import { ProductList } from "./ProductList.jsx";
 
 export const App = () => {
   return (
     <div>
+     <ProductList  />
+
       <UserDetails
         name="rayhan"
         isOnline={true}
