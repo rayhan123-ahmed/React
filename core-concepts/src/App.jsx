@@ -14,12 +14,17 @@ import { NameList } from "./NameList.jsx";
 import { TodoList } from "./TodoList.jsx";
 import { Alert } from "./Alert .jsx";
 
+import { CustomButton } from "./CustomButton.jsx";
+
 export const App = () => {
   return (
     <div>
+    <CustomButton text='like' />
+
+
+
     <Alert>Youre chnage has been saved</Alert>
     <Alert type="error">something went wrong</Alert>
-
     <TodoList />
     <NameList />
      <ProductList  />
