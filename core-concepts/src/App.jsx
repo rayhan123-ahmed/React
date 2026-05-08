@@ -13,21 +13,24 @@ import { ProductList } from "./ProductList.jsx";
 import { NameList } from "./NameList.jsx";
 import { TodoList } from "./TodoList.jsx";
 import { Alert } from "./Alert .jsx";
+import { Contact } from "./Contact.jsx";
+import { NewsLatter } from "./NewsLatter.jsx";
+import { Menu } from "./Menu.jsx";
 
 import { CustomButton } from "./CustomButton.jsx";
 
 export const App = () => {
   return (
     <div>
-    <CustomButton text='like' />
-
-
-
-    <Alert>Youre chnage has been saved</Alert>
-    <Alert type="error">something went wrong</Alert>
-    <TodoList />
-    <NameList />
-     <ProductList  />
+      <Menu />
+      <Contact />
+      <NewsLatter />
+      <CustomButton text="like" />
+      <Alert>Youre chnage has been saved</Alert>
+      <Alert type="error">something went wrong</Alert>
+      <TodoList />
+      <NameList />
+      <ProductList />
 
       <UserDetails
         name="rayhan"
