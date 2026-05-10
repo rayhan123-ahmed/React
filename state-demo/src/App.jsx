@@ -4,6 +4,7 @@ import { LoginCard } from "./LoginCard";
 import { UserDashBoard } from "./UseDashBoard";
 import { SimpleCounter } from "./SimpleCounter";
 import { PrevStateCounter } from "./PrevStateCounter";
+import { BachingCounter } from "./BatchingCounter";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <UserDashBoard />
       <LoginCard />
       <Count />
+      <BachingCounter />
     </>
   );
 }
