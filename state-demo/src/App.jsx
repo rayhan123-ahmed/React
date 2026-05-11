@@ -5,11 +5,13 @@ import { UserDashBoard } from "./UseDashBoard";
 import { SimpleCounter } from "./SimpleCounter";
 import { PrevStateCounter } from "./PrevStateCounter";
 import { BachingCounter } from "./BatchingCounter";
+import { UserProfile } from "./UseProfile";
 
 function App() {
   return (
     <>
-    <PrevStateCounter />
+      <UserProfile />
+      <PrevStateCounter />
       <SimpleCounter />
       <UserDashBoard />
       <LoginCard />
