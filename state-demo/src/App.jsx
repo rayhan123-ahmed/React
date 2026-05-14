@@ -13,14 +13,14 @@ function App() {
   return (
     <>
     <ShoppingCart />
-      {/* <TodoList />
+      <TodoList />
       <UserProfile />
       <PrevStateCounter />
       <SimpleCounter />
       <UserDashBoard />
       <LoginCard />
       <Count />
-      <BachingCounter /> */}
+      <BachingCounter />
     </>
   );
 }
