@@ -7,18 +7,20 @@ import { PrevStateCounter } from "./PrevStateCounter";
 import { BachingCounter } from "./BatchingCounter";
 import { UserProfile } from "./UseProfile";
 import { TodoList } from "./TodoList";
+import { ShoppingCart } from "./ProductCart";
 
 function App() {
   return (
     <>
-      <TodoList />
+    <ShoppingCart />
+      {/* <TodoList />
       <UserProfile />
       <PrevStateCounter />
       <SimpleCounter />
       <UserDashBoard />
       <LoginCard />
       <Count />
-      <BachingCounter />
+      <BachingCounter /> */}
     </>
   );
 }
