@@ -8,11 +8,14 @@ import { BachingCounter } from "./BatchingCounter";
 import { UserProfile } from "./UseProfile";
 import { TodoList } from "./TodoList";
 import { ShoppingCart } from "./ProductCart";
+import { CounterWithReducer } from "./CounterWithReducer";
 
 function App() {
   return (
     <>
-    <ShoppingCart />
+    <CounterWithReducer />
+
+       <ShoppingCart />
       <TodoList />
       <UserProfile />
       <PrevStateCounter />
@@ -20,7 +23,7 @@ function App() {
       <UserDashBoard />
       <LoginCard />
       <Count />
-      <BachingCounter />
+      <BachingCounter /> 
     </>
   );
 }
