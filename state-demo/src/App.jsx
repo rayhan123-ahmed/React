@@ -9,13 +9,14 @@ import { UserProfile } from "./UseProfile";
 import { TodoList } from "./TodoList";
 import { ShoppingCart } from "./ProductCart";
 import { CounterWithReducer } from "./CounterWithReducer";
+import { ShoppingCartWithreducer } from "./ShoppingCartWithreducer";
 
 function App() {
   return (
     <>
-    <CounterWithReducer />
-
-       <ShoppingCart />
+     <ShoppingCartWithreducer />
+     <CounterWithReducer />
+      <ShoppingCart />
       <TodoList />
       <UserProfile />
       <PrevStateCounter />
