@@ -11,22 +11,25 @@ import { ShoppingCart } from "./ProductCart";
 import { CounterWithReducer } from "./CounterWithReducer";
 import { ShoppingCartWithreducer } from "./ShoppingCartWithreducer";
 import { CounterWithInit } from "./CounterWithInit";
+import { CustomSet } from "./CustomCounter";
 
 function App() {
   return (
     <>
-       <CounterWithInit /> *
-       {/* <ShoppingCartWithreducer />
+    <CustomSet />
+    <PrevStateCounter />
+
+      {/* <CounterWithInit /> *
+      <ShoppingCartWithreducer />
      <CounterWithReducer />
       <ShoppingCart />
       <TodoList />
       <UserProfile />
-      <PrevStateCounter />
       <SimpleCounter />
       <UserDashBoard />
       <LoginCard />
       <Count />
-      <BachingCounter />  */}
+      <BachingCounter />   */}
     </>
   );
 }
