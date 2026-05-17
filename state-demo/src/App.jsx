@@ -10,11 +10,13 @@ import { TodoList } from "./TodoList";
 import { ShoppingCart } from "./ProductCart";
 import { CounterWithReducer } from "./CounterWithReducer";
 import { ShoppingCartWithreducer } from "./ShoppingCartWithreducer";
+import { CounterWithInit } from "./CounterWithInit";
 
 function App() {
   return (
     <>
-     <ShoppingCartWithreducer />
+       <CounterWithInit /> *
+       {/* <ShoppingCartWithreducer />
      <CounterWithReducer />
       <ShoppingCart />
       <TodoList />
@@ -24,7 +26,7 @@ function App() {
       <UserDashBoard />
       <LoginCard />
       <Count />
-      <BachingCounter /> 
+      <BachingCounter />  */}
     </>
   );
 }
