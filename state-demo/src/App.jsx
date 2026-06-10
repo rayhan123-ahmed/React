@@ -1,6 +1,4 @@
 import "./App.css";
-import { Count } from "./Count";
-import { LoginCard } from "./LoginCard";
 import { UserDashBoard } from "./UseDashBoard";
 import { SimpleCounter } from "./SimpleCounter";
 import { PrevStateCounter } from "./PrevStateCounter";
@@ -12,12 +10,16 @@ import { CounterWithReducer } from "./CounterWithReducer";
 import { ShoppingCartWithreducer } from "./ShoppingCartWithreducer";
 import { CounterWithInit } from "./CounterWithInit";
 import { CustomSet } from "./CustomCounter";
+import { Counter } from "./Count";
+import {LoginCard} from './LoginCard'
 
 function App() {
   return (
     <>
-    <CustomSet />
-    <PrevStateCounter />
+      <CustomSet />
+      <PrevStateCounter />
+      <Counter />
+      <LoginCard />
 
       {/* <CounterWithInit /> *
       <ShoppingCartWithreducer />
@@ -27,7 +29,6 @@ function App() {
       <UserProfile />
       <SimpleCounter />
       <UserDashBoard />
-      <LoginCard />
       <Count />
       <BachingCounter />   */}
     </>

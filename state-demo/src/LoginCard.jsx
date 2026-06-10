@@ -1,26 +1,28 @@
 import { useState } from "react";
 
-export const LoginCard = () => {
+export function LoginCard() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const HandleClick = () => {
+
+  const [massage, setMassage] = useState("");
+
+  function HandleClick() {
     setIsLoggedIn(!isLoggedIn);
-  };
+  }
 
-  const [message, setMessage] = useState("");
+  function HandleMassage(event) {
+    setMassage(event.target.value);
+  }
 
-  const HandleMessage = (event) => {
-    setMessage(event.target.value);
-  };
   return (
     <>
-      <button onClick={HandleClick}>{isLoggedIn ? "logout" : "login"}</button>
+      <button onClick={HandleClick}>{isLoggedIn ? "login" : "logout"}</button>
+
       <input
-        type="text"
-        placeholder="send a message"
-        value={message}
-        onChange={HandleMessage}
+        placeholder="type massage"
+        value={massage}
+        onChange={HandleMassage}
       />
-      <p>{message}</p>
+      <p>{massage}</p>
     </>
   );
-};
+}
