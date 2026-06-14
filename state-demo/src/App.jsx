@@ -1,5 +1,4 @@
 import "./App.css";
-import { UserDashBoard } from "./UseDashBoard";
 import { SimpleCounter } from "./SimpleCounter";
 import { PrevStateCounter } from "./PrevStateCounter";
 import { BachingCounter } from "./BatchingCounter";
@@ -12,6 +11,7 @@ import { CounterWithInit } from "./CounterWithInit";
 import { CustomSet } from "./CustomCounter";
 import { Counter } from "./Count";
 import {LoginCard} from './LoginCard'
+import { Dashboard } from "./UseDashBoard";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <PrevStateCounter />
       <Counter />
       <LoginCard />
+      <Dashboard/>
 
       {/* <CounterWithInit /> *
       <ShoppingCartWithreducer />
@@ -28,7 +29,6 @@ function App() {
       <TodoList />
       <UserProfile />
       <SimpleCounter />
-      <UserDashBoard />
       <Count />
       <BachingCounter />   */}
     </>
