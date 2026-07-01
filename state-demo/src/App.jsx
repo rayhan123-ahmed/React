@@ -2,7 +2,6 @@ import "./App.css";
 import { PrevStateCounter } from "./PrevStateCounter";
 import { BachingCounter } from "./BatchingCounter";
 import { UserProfile } from "./UseProfile";;
-import { ShoppingCartWithreducer } from "./ShoppingCartWithreducer";
 import { CounterWithInit } from "./CounterWithInit";
 import { CustomSet } from "./CustomCounter";
 import { Counter } from "./Count";
@@ -12,6 +11,7 @@ import {SimpleCounter} from './SimpleCounter'
 import { TodoList } from "./TodoList";
 import { ShoppingCart } from "./shoppingCart";
 import { CounterWithReducer } from "./CounterWithReducer";
+import { ShoppingCartWithReducer } from "./ShoppingCartWithreducer";
 
 function App() {
   return (
@@ -25,10 +25,10 @@ function App() {
       <TodoList/>
       <ShoppingCart />
       <CounterWithReducer/>
+      <ShoppingCartWithReducer />
      
 
       {/* <CounterWithInit /> *
-      <ShoppingCartWithreducer />
       <UserProfile />
       <SimpleCounter />
       <Count />
