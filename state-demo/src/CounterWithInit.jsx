@@ -2,7 +2,7 @@ import { useReducer } from "react";
 
 const initialState = 0;
 
-const reducer = (state, action) => {
+const Reducer = (state, action) => {
   switch (action) {
     case "incriment":
       return state + 1;
@@ -15,25 +15,29 @@ const reducer = (state, action) => {
   }
 };
 
-const init = (initilValue) => {
-  console.log("init function called - and this only runs once");
+const init = (initialValue) => {
+  console.log("init funtion count - this is the only times it runs");
 
-  const savedCount = localStorage.getItem("count");
+  const saveCount = localStorage.getItem("count");
 
-  if (savedCount !== null) {
-    console.log("Found savedCount", savedCount);
-    return JSON.parse(savedCount);
+  if (saveCount !== null) {
+    console.log("found save count:", saveCount);
+
+    
+    return parseInt(saveCount);
   }
-  console.log("No save count, using inital value:", initilValue);
-  return initilValue;
+  console.log("no save count, using initial value :", initialValue);
+
+  return initialValue;
 };
 
-export const CounterWithInit = () => {
-  const [count, dispatch] = useReducer(reducer, initialState, init);
+export const CounterwithInit = () => {
+  const [count, dispatch] = useReducer(Reducer, initialState, init);
+
   return (
     <div>
-      <p>Count:{count}</p>
-      <button onClick={() => dispatch("incriment")}>incriment</button>
+      <p>count : {count}</p>
+      <button onClick={() => dispatch("incriment")}>Incriment</button>
       <button onClick={() => dispatch("decrement")}>decrement</button>
       <button onClick={() => dispatch("reset")}>reset</button>
     </div>
