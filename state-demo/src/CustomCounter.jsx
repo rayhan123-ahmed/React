@@ -1,43 +1,37 @@
 import { useReducer } from "react";
 
-const initalValue = 0;
-
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "NEW_VALUE":
-        if (typeof action.payload === 'function') {
-            return action.payload(state)
-        }
-      return action.payload;
-    default:
-      return state;
+const init = (initial)=> {
+  if (typeof initial === 'function') {
+    return initial();
   }
-};
-const init = (value)=>{
-  return value + 10
+  return initial
+
 }
 
-export const CustomSet = () => {
-  const [count, setCount] = useReducer(reducer, initalValue,init);
 
+const useStateCustom = (initialValue) => {
+  const reducer = (state, action) => {
+    if (typeof action === 'function') {
+      return action(state)
+    }
+     return action
+  };
+  const [state, dispatch] = useReducer(reducer, initialValue,init);
+
+  const setState = (newValue)=> {
+    dispatch(newValue)
+  }
+  return [state, setState]
+};
+
+export const CoustmCounter = ()=> {
+  const [count,setCount] = useStateCustom(0)
   return (
     <div>
-      <h1>${count}</h1>
-      <button
-        onClick={() => setCount({ type: "NEW_VALUE", payload: (prev)=> prev + 5 })}
-      >
-        Incriment
-      </button>
-      <button
-        onClick={() => setCount({ type: "NEW_VALUE", payload: (prev) => prev - 1 })}
-      >
-        Dicriment
-      </button>
-      <button
-        onClick={() => setCount({ type: "NEW_VALUE", payload: initalValue })}
-      >
-        Reset
-      </button>
+      <p>Count : {count}</p>
+      <button onClick={()=> setCount((prev) => prev + 1)}>Incriment</button>
+      <button onClick={()=> setCount((prev)=> prev - 1)}>Dicriment</button>
+      <button onClick={()=> setCount(0)}>Reset</button>
     </div>
-  );
-};
+  )
+}
