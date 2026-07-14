@@ -1,4 +1,5 @@
 import { StopWatch } from './StopWatch'
+import { FocusInput } from './FocusInput'
 import './App.css'
 function App() {
   
@@ -6,6 +7,7 @@ function App() {
   return (
     <div>
       <StopWatch/>
+      <FocusInput/>
     </div>
   )
 }
