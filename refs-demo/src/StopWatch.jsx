@@ -13,9 +13,17 @@ export const StopWatch = ()=>{
  const stop = ()=>{
     clearInterval(intervelRef.current)
  }
-    return <div>
+ const reset = ()=> {
+   clearInterval(intervelRef.current);
+   intervelRef.current = null
+   setTime(0)
+ }
+    return (
+      <div>
         <h1>Time : {time}</h1>
         <button onClick={start}>Start</button>
         <button onClick={stop}>Stop</button>
-    </div>
+        <button onClick={reset}>Reset</button>
+      </div>
+    );
 }
